@@ -60,7 +60,7 @@ end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   holiday_hash.each do |season_name, holidays|
-    if(season_name.to_s == season || season_name.to_s == season.to_s)
+    if(season_name.to_s == season)
       holiday_hash[season_name][:holiday_name] = supply_array
     end
     puts holiday_hash
@@ -68,7 +68,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   end
 end
 
-add_new_holiday_with_supplies(holiday_hash, :fall, "halloween", ["chocolate", "candy"])
+add_new_holiday_with_supplies(holiday_hash, "fall", "halloween", ["chocolate", "candy"])
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
