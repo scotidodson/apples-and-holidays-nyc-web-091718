@@ -98,7 +98,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_names = []
   holiday_names.each do |season, holiday_data|
     holiday_data.each do |holiday, supplies|
-      holiday_names << holiday.capitalize
+      holiday_names << holiday
     end
   end
   holiday_names
