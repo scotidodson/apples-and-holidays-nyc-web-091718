@@ -65,7 +65,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
     end
   end
   holiday_hash
-  bind.pry 
+  binding.pry 
 end
 
 add_new_holiday_with_supplies(holiday_hash, "fall", "holiday_name", "supply_array")
